@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valentine's Day Proposal</title>
+    <style>
+        body {
+            background-image:url(https://i.pinimg.com/736x/10/bb/c5/10bbc5109fc6077107d91e76b8fda885.jpg);
+            background-size: cover;
+            text-align: center;
+            font-family: 'Arial', sans-serif;
+            color: rgb(50, 43, 43);
+            padding: 50px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            margin: 10px;
+            cursor: pointer;
+        }
+
+        #response {
+            font-size: 30px;
+            margin-top: 20px;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href=".vs/etude/jeMexcuse.css">
+</head>
+<body>
+<h1>je m'excuse encore <3</h1>
+<br>
+<br>
+<br>
+
+    <h1>est ce que tu me pardonnes ?</h1>
+
+
+<button onclick="displayResponse('oui')">OUI</button>
+<button onclick="displayResponse('non')">NON</button>
+
+<div id="response"></div>
+
+<script>
+    function displayResponse(answer) {
+        var responseElement = document.getElementById('response');
+        if (answer === 'oui') {
+            responseElement.innerHTML = "tu es le meilleur et je t'aime bcp bcp bcp bcp bcp bcp bcp bcp bcp";
+        } else if (answer === 'non') {
+            responseElement.innerHTML = "svp ):"
+        }
+    } </script>
+<p>je ne voulais pas te faire de la peine. je t'aime.</p>
+</body>
+</html>
